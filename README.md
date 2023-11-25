@@ -1,2 +1,4 @@
-# periodictable
-Periodic Table made in CSS Grid 
+# Periodic Table
+Periodic Table made in CSS Grid
+
+https://hazemmaddouri.github.io/periodictable/index.html
