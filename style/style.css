@@ -1,0 +1,1121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  block-size: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(18, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  max-height: 35rem;
+  max-width: 90rem;
+  gap: 2px;
+  grid-template-areas: "H  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  He" "Li Be .  .  .  .  ZZ .  .  .  .  .  B  C  N  O  F  Ne" "Na Mg .  .  .  .  .  .  .  .  .  .  Al Si P  S  Cl Ar" "K  Ca Sc Ti V  Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr" "Rb Sr Y  Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I  Xe" "Cs Ba LS Hf Ta W  Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn" "Fr Ra AS Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og";
+}
+
+.elem__alkmetal, .elem__alkearth, .elem__transmetal, .elem__basicmetal, .elem__semimetal, .elem__nonmetal, .elem__halogen, .elem__noblegas, .elem__lanthanide, .elem__actinide, .elem__sample {
+  font-size: 2rem;
+  transform: scale(1);
+  z-index: 1;
+  transition: transform 0.5s, font-weight 0.5s, z-index 1s;
+}
+.elem__alkmetal .hide, .elem__alkearth .hide, .elem__transmetal .hide, .elem__basicmetal .hide, .elem__semimetal .hide, .elem__nonmetal .hide, .elem__halogen .hide, .elem__noblegas .hide, .elem__lanthanide .hide, .elem__actinide .hide, .elem__sample .hide {
+  font-size: 0;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s, font-size 0.25s;
+}
+.elem__alkmetal:hover, .elem__alkearth:hover, .elem__transmetal:hover, .elem__basicmetal:hover, .elem__semimetal:hover, .elem__nonmetal:hover, .elem__halogen:hover, .elem__noblegas:hover, .elem__lanthanide:hover, .elem__actinide:hover, .elem__sample:hover {
+  transform: scale(2);
+  z-index: 99;
+}
+.elem__alkmetal:hover .hide, .elem__alkearth:hover .hide, .elem__transmetal:hover .hide, .elem__basicmetal:hover .hide, .elem__semimetal:hover .hide, .elem__nonmetal:hover .hide, .elem__halogen:hover .hide, .elem__noblegas:hover .hide, .elem__lanthanide:hover .hide, .elem__actinide:hover .hide, .elem__sample:hover .hide {
+  font-size: 0.5rem;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+[class*=elem] {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+[class*=elem__sample].num00 {
+  grid-area: ZZ;
+}
+
+[class*=elem__nonmetal].num01 {
+  grid-area: H;
+}
+
+[class*=elem__noblegas].num02 {
+  grid-area: He;
+}
+
+[class*=elem__alkmetal].num03 {
+  grid-area: Li;
+}
+
+[class*=elem__alkearth].num04 {
+  grid-area: Be;
+}
+
+[class*=elem__semimetal].num05 {
+  grid-area: B;
+}
+
+[class*=elem__nonmetal].num06 {
+  grid-area: C;
+}
+
+[class*=elem__nonmetal].num07 {
+  grid-area: N;
+}
+
+[class*=elem__nonmetal].num08 {
+  grid-area: O;
+}
+
+[class*=elem__halogen].num09 {
+  grid-area: F;
+}
+
+[class*=elem__noblegas].num10 {
+  grid-area: Ne;
+}
+
+[class*=elem__alkmetal].num11 {
+  grid-area: Na;
+}
+
+[class*=elem__alkearth].num12 {
+  grid-area: Mg;
+}
+
+[class*=elem__basicmetal].num13 {
+  grid-area: Al;
+}
+
+[class*=elem__semimetal].num14 {
+  grid-area: Si;
+}
+
+[class*=elem__nonmetal].num15 {
+  grid-area: P;
+}
+
+[class*=elem__nonmetal].num16 {
+  grid-area: S;
+}
+
+[class*=elem__halogen].num17 {
+  grid-area: Cl;
+}
+
+[class*=elem__noblegas].num18 {
+  grid-area: Ar;
+}
+
+[class*=elem__alkmetal].num19 {
+  grid-area: K;
+}
+
+[class*=elem__alkearth].num20 {
+  grid-area: Ca;
+}
+
+[class*=elem__transmetal].num21 {
+  grid-area: Sc;
+}
+
+[class*=elem__transmetal].num22 {
+  grid-area: Ti;
+}
+
+[class*=elem__transmetal].num23 {
+  grid-area: V;
+}
+
+[class*=elem__transmetal].num24 {
+  grid-area: Cr;
+}
+
+[class*=elem__transmetal].num25 {
+  grid-area: Mn;
+}
+
+[class*=elem__transmetal].num26 {
+  grid-area: Fe;
+}
+
+[class*=elem__transmetal].num27 {
+  grid-area: Co;
+}
+
+[class*=elem__transmetal].num28 {
+  grid-area: Ni;
+}
+
+[class*=elem__transmetal].num29 {
+  grid-area: Cu;
+}
+
+[class*=elem__transmetal].num30 {
+  grid-area: Zn;
+}
+
+[class*=elem__basicmetal].num31 {
+  grid-area: Ga;
+}
+
+[class*=elem__semimetal].num32 {
+  grid-area: Ge;
+}
+
+[class*=elem__semimetal].num33 {
+  grid-area: As;
+}
+
+[class*=elem__nonmetal].num34 {
+  grid-area: Se;
+}
+
+[class*=elem__halogen].num35 {
+  grid-area: Br;
+}
+
+[class*=elem__noblegas].num36 {
+  grid-area: Kr;
+}
+
+[class*=elem__alkmetal].num37 {
+  grid-area: Rb;
+}
+
+[class*=elem__alkearth].num38 {
+  grid-area: Sr;
+}
+
+[class*=elem__transmetal].num39 {
+  grid-area: Y;
+}
+
+[class*=elem__transmetal].num40 {
+  grid-area: Zr;
+}
+
+[class*=elem__transmetal].num41 {
+  grid-area: Nb;
+}
+
+[class*=elem__transmetal].num42 {
+  grid-area: Mo;
+}
+
+[class*=elem__transmetal].num43 {
+  grid-area: Tc;
+}
+
+[class*=elem__transmetal].num44 {
+  grid-area: Ru;
+}
+
+[class*=elem__transmetal].num45 {
+  grid-area: Rh;
+}
+
+[class*=elem__transmetal].num46 {
+  grid-area: Pd;
+}
+
+[class*=elem__transmetal].num47 {
+  grid-area: Ag;
+}
+
+[class*=elem__transmetal].num48 {
+  grid-area: Cd;
+}
+
+[class*=elem__basicmetal].num49 {
+  grid-area: In;
+}
+
+[class*=elem__basicmetal].num50 {
+  grid-area: Sn;
+}
+
+[class*=elem__semimetal].num51 {
+  grid-area: Sb;
+}
+
+[class*=elem__semimetal].num52 {
+  grid-area: Te;
+}
+
+[class*=elem__halogen].num53 {
+  grid-area: I;
+}
+
+[class*=elem__noblegas].num54 {
+  grid-area: Xe;
+}
+
+[class*=elem__alkmetal].num55 {
+  grid-area: Cs;
+}
+
+[class*=elem__alkearth].num56 {
+  grid-area: Ba;
+}
+
+[class*=elem__lanthanide].num57 {
+  grid-area: LS;
+}
+
+[class*=elem__transmetal].num72 {
+  grid-area: Hf;
+}
+
+[class*=elem__transmetal].num73 {
+  grid-area: Ta;
+}
+
+[class*=elem__transmetal].num74 {
+  grid-area: W;
+}
+
+[class*=elem__transmetal].num75 {
+  grid-area: Re;
+}
+
+[class*=elem__transmetal].num76 {
+  grid-area: Os;
+}
+
+[class*=elem__transmetal].num77 {
+  grid-area: Ir;
+}
+
+[class*=elem__transmetal].num78 {
+  grid-area: Pt;
+}
+
+[class*=elem__transmetal].num79 {
+  grid-area: Au;
+}
+
+[class*=elem__transmetal].num80 {
+  grid-area: Hg;
+}
+
+[class*=elem__basicmetal].num81 {
+  grid-area: Tl;
+}
+
+[class*=elem__basicmetal].num82 {
+  grid-area: Pb;
+}
+
+[class*=elem__basicmetal].num83 {
+  grid-area: Bi;
+}
+
+[class*=elem__semimetal].num84 {
+  grid-area: Po;
+}
+
+[class*=elem__halogen].num85 {
+  grid-area: At;
+}
+
+[class*=elem__noblegas].num86 {
+  grid-area: Rn;
+}
+
+[class*=elem__alkmetal].num87 {
+  grid-area: Fr;
+}
+
+[class*=elem__alkearth].num88 {
+  grid-area: Ra;
+}
+
+[class*=elem__actinide].num89 {
+  grid-area: AS;
+}
+
+[class*=elem__transmetal].num104 {
+  grid-area: Rf;
+}
+
+[class*=elem__transmetal].num105 {
+  grid-area: Db;
+}
+
+[class*=elem__transmetal].num106 {
+  grid-area: Sg;
+}
+
+[class*=elem__transmetal].num107 {
+  grid-area: Bh;
+}
+
+[class*=elem__transmetal].num108 {
+  grid-area: Hs;
+}
+
+[class*=elem__transmetal].num109 {
+  grid-area: Mt;
+}
+
+[class*=elem__transmetal].num110 {
+  grid-area: Ds;
+}
+
+[class*=elem__transmetal].num111 {
+  grid-area: Rg;
+}
+
+[class*=elem__transmetal].num112 {
+  grid-area: Cn;
+}
+
+[class*=elem__basicmetal].num113 {
+  grid-area: Nh;
+}
+
+[class*=elem__basicmetal].num114 {
+  grid-area: Fl;
+}
+
+[class*=elem__basicmetal].num115 {
+  grid-area: Mc;
+}
+
+[class*=elem__basicmetal].num116 {
+  grid-area: Lv;
+}
+
+[class*=elem__halogen].num117 {
+  grid-area: Ts;
+}
+
+[class*=elem__noblegas].num118 {
+  grid-area: Og;
+}
+
+/*.lanth01 {
+  grid-area: La;
+  background-color: $lanthanide;
+}
+.lanth02 {
+  grid-area: Ce;
+  background-color: $lanthanide;
+}
+.lanth03 {
+  grid-area: Pr;
+  background-color: $lanthanide;
+}
+.lanth04 {
+  grid-area: Nd;
+  background-color: $lanthanide;
+}
+.lanth05 {
+  grid-area: Pm;
+  background-color: $lanthanide;
+}
+.lanth06 {
+  grid-area: Sm;
+  background-color: $lanthanide;
+}
+.lanth07 {
+  grid-area: Eu;
+  background-color: $lanthanide;
+}
+.lanth08 {
+  grid-area: Gd;
+  background-color: $lanthanide;
+}
+.lanth09 {
+  grid-area: Tb;
+  background-color: $lanthanide;
+}
+.lanth10 {
+  grid-area: Dy;
+  background-color: $lanthanide;
+}
+.lanth11 {
+  grid-area: Ho;
+  background-color: $lanthanide;
+}
+.lanth12 {
+  grid-area: Er;
+  background-color: $lanthanide;
+}
+.lanth13 {
+  grid-area: Tm;
+  background-color: $lanthanide;
+}
+.lanth14 {
+  grid-area: Yb;
+  background-color: $lanthanide;
+}
+.lanth15 {
+  grid-area: Lu;
+  background-color: $lanthanide;
+}
+*/
+.elem {
+  font-family: "helvetica";
+  block-size: border-box;
+  /*&.num01 {
+    grid-area: H;
+  }
+  &.num02 {
+   grid-area: He;
+  }
+  &.num03 {
+   grid-area: Li;
+  }
+  &.num04 {
+   grid-area: Be;
+  }
+  &.num05 {
+   grid-area: B;
+  }
+  &.num06 {
+   grid-area: C;
+  }
+  &.num07 {
+   grid-area: N;
+  }
+  &.num08 {
+   grid-area: O;
+  }
+  &.num09 {
+   grid-area: F;
+  }
+  &.num10 {
+   grid-area: Ne;
+  }
+  &.num11 {
+   grid-area: Na;
+  }
+  &.num12 {
+   grid-area: Mg;
+  }
+  &.num13 {
+   grid-area: Al;
+  }
+  &.num14 {
+   grid-area: Si;
+  }
+  &.num15 {
+   grid-area: P;
+  }
+  &.num16 {
+   grid-area: S;
+  }
+  &.num17 {
+   grid-area: Cl;
+  }
+  &.num18 {
+   grid-area: Ar;
+  }
+  &.num19 {
+   grid-area: K;
+  }
+  &.num20 {
+   grid-area: Ca;
+  }
+  &.num21 {
+   grid-area: Sc;
+  }
+  &.num22 {
+   grid-area: Ti;
+  }
+  &.num23 {
+   grid-area: V;
+  }
+  &.num24 {
+   grid-area: Cr;
+  }
+  &.num25 {
+   grid-area: Mn;
+  }
+  &.num26 {
+   grid-area: Fe;
+  }
+  &.num27 {
+   grid-area: Co;
+  }
+  &.num28 {
+   grid-area: Ni;
+  }
+  &.num29 {
+   grid-area: Cu;
+  }
+  &.num30 {
+   grid-area: Zn;
+  }
+  &.num31 {
+   grid-area: Ga;
+  }
+  &.num32 {
+   grid-area: Ge;
+  }
+  &.num33 {
+   grid-area: As;
+  }
+  &.num34 {
+   grid-area: Se;
+  }
+  &.num35 {
+   grid-area: Br;
+  }
+  &.num36 {
+   grid-area: Kr;
+  }
+  &.num37 {
+   grid-area: Rb;
+  }
+  &.num38 {
+   grid-area: Sr;
+  }
+  &.num39 {
+   grid-area: Y;
+  }
+  &.num40 {
+   grid-area: Zr;
+  }
+  &.num41 {
+   grid-area: Nb;
+  }
+  &.num42 {
+   grid-area: Mo;
+  }
+  &.num43 {
+   grid-area: Tc;
+  }
+  &.num44 {
+   grid-area: Ru;
+  }
+  &.num45 {
+   grid-area: Rh;
+  }
+  &.num46 {
+   grid-area: Pd;
+  }
+  &.num47 {
+   grid-area: Ag;
+  }
+  &.num48 {
+   grid-area: Cd;
+  }
+  &.num49 {
+   grid-area: In;
+  }
+  &.num50 {
+   grid-area: Sn;
+  }
+  &.num51 {
+   grid-area: Sb;
+  }
+  &.num52 {
+   grid-area: Te;
+  }
+  &.num53 {
+   grid-area: I;
+  }
+  &.num54 {
+   grid-area: Xe;
+  }
+  &.num55 {
+   grid-area: Cs;
+  }
+  &.num56 {
+   grid-area: Ba;
+  }
+  &.num57 {
+   grid-area: LS;
+  }
+  &.num72 {
+   grid-area: Hf;
+  }
+  &.num73 {
+   grid-area: Ta;
+  }
+  &.num74 {
+   grid-area: W;
+  }
+  &.num75 {
+   grid-area: Re;
+  }
+  &.num76 {
+   grid-area: Os;
+  }
+  &.num77 {
+   grid-area: Ir;
+  }
+  &.num78 {
+   grid-area: Pt;
+  }
+  &.num79 {
+   grid-area: Au;
+  }
+  &.num80 {
+   grid-area: Hg;
+  }
+  &.num81 {
+   grid-area: Tl;
+  }
+  &.num82 {
+   grid-area: Pb;
+  }
+  &.num83 {
+   grid-area: Bi;
+  }
+  &.num84 {
+   grid-area: Po;
+  }
+  &.num85 {
+   grid-area: At;
+  }
+  &.num86 {
+   grid-area: Rn;
+  }
+  &.num87 {
+   grid-area: Fr;
+  }
+  &.num88 {
+   grid-area: Ra;
+  }
+  &.num89 {
+   grid-area: AS;
+  }
+  &.num104 {
+   grid-area: Rf;
+  }
+  &.num105 {
+   grid-area: Db;
+  }
+  &.num106 {
+   grid-area: Sg;
+  }
+  &.num107 {
+   grid-area: Bh;
+  }
+  &.num108 {
+   grid-area: Hs;
+  }
+  &.num109 {
+   grid-area: Mt;
+  }
+  &.num110 {
+   grid-area: Ds;
+  }
+  &.num111 {
+   grid-area: Rg;
+  }
+  &.num112 {
+   grid-area: Cn;
+  }
+  &.num113 {
+   grid-area: Nh;
+  }
+  &.num114 {
+   grid-area: Fl;
+  }
+  &.num115 {
+   grid-area: Mc;
+  }
+  &.num116 {
+   grid-area: Lv;
+  }
+  &.num117 {
+   grid-area: Ts;
+  }
+  &.num118 {
+    grid-area: Og; 
+  }*/
+}
+.elem__sample {
+  font-size: 1em;
+  border: solid 1px black;
+  background-color: #f5f5f5;
+}
+.elem__nonmetal {
+  border: solid 1px black;
+  background-color: #96D9EB;
+}
+.elem__noblegas {
+  border: solid 1px black;
+  background-color: #CCBFDE;
+}
+.elem__alkmetal {
+  border: solid 1px black;
+  background-color: #F58584;
+}
+.elem__alkearth {
+  border: solid 1px black;
+  background-color: #F7B476;
+}
+.elem__semimetal {
+  border: solid 1px black;
+  background-color: #A0D6BE;
+}
+.elem__halogen {
+  border: solid 1px black;
+  background-color: #7EC2EC;
+}
+.elem__lanthanide {
+  border: solid 1px black;
+  background-color: #F9C7DD;
+}
+.elem__actinide {
+  border: solid 1px black;
+  background-color: #DB80B5;
+}
+.elem__basicmetal {
+  border: solid 1px black;
+  background-color: #CEE07B;
+}
+.elem__transmetal {
+  border: solid 1px black;
+  background-color: #FAF59C;
+}
+
+/*.num01 {
+  grid-area: H;
+}
+.num02 {
+ grid-area: He;
+}
+.num03 {
+ grid-area: Li;
+}
+.num04 {
+ grid-area: Be;
+}
+.num05 {
+ grid-area: B;
+}
+.num06 {
+ grid-area: C;
+}
+.num07 {
+ grid-area: N;
+}
+.num08 {
+ grid-area: O;
+}
+.num09 {
+ grid-area: F;
+}
+.num10 {
+ grid-area: Ne;
+}
+.num11 {
+ grid-area: Na;
+}
+.num12 {
+ grid-area: Mg;
+}
+.num13 {
+ grid-area: Al;
+}
+.num14 {
+ grid-area: Si;
+}
+.num15 {
+ grid-area: P;
+}
+.num16 {
+ grid-area: S;
+}
+.num17 {
+ grid-area: Cl;
+}
+.num18 {
+ grid-area: Ar;
+}
+.num19 {
+ grid-area: K;
+}
+.num20 {
+ grid-area: Ca;
+}
+.num21 {
+ grid-area: Sc;
+}
+.num22 {
+ grid-area: Ti;
+}
+.num23 {
+ grid-area: V;
+}
+.num24 {
+ grid-area: Cr;
+}
+.num25 {
+ grid-area: Mn;
+}
+.num26 {
+ grid-area: Fe;
+}
+.num27 {
+ grid-area: Co;
+}
+.num28 {
+ grid-area: Ni;
+}
+.num29 {
+ grid-area: Cu;
+}
+.num30 {
+ grid-area: Zn;
+}
+.num31 {
+ grid-area: Ga;
+}
+.num32 {
+ grid-area: Ge;
+}
+.num33 {
+ grid-area: As;
+}
+.num34 {
+ grid-area: Se;
+}
+.num35 {
+ grid-area: Br;
+}
+.num36 {
+ grid-area: Kr;
+}
+.num37 {
+ grid-area: Rb;
+}
+.num38 {
+ grid-area: Sr;
+}
+.num39 {
+ grid-area: Y;
+}
+.num40 {
+ grid-area: Zr;
+}
+.num41 {
+ grid-area: Nb;
+}
+.num42 {
+ grid-area: Mo;
+}
+.num43 {
+ grid-area: Tc;
+}
+.num44 {
+ grid-area: Ru;
+}
+.num45 {
+ grid-area: Rh;
+}
+.num46 {
+ grid-area: Pd;
+}
+.num47 {
+ grid-area: Ag;
+}
+.num48 {
+ grid-area: Cd;
+}
+.num49 {
+ grid-area: In;
+}
+.num50 {
+ grid-area: Sn;
+}
+.num51 {
+ grid-area: Sb;
+}
+.num52 {
+ grid-area: Te;
+}
+.num53 {
+ grid-area: I;
+}
+.num54 {
+ grid-area: Xe;
+}
+.num55 {
+ grid-area: Cs;
+}
+.num56 {
+ grid-area: Ba;
+}
+.num57 {
+ grid-area: LS;
+}
+.num72 {
+ grid-area: Hf;
+}
+.num73 {
+ grid-area: Ta;
+}
+.num74 {
+ grid-area: W;
+}
+.num75 {
+ grid-area: Re;
+}
+.num76 {
+ grid-area: Os;
+}
+.num77 {
+ grid-area: Ir;
+}
+.num78 {
+ grid-area: Pt;
+}
+.num79 {
+ grid-area: Au;
+}
+.num80 {
+ grid-area: Hg;
+}
+.num81 {
+ grid-area: Tl;
+}
+.num82 {
+ grid-area: Pb;
+}
+.num83 {
+ grid-area: Bi;
+}
+.num84 {
+ grid-area: Po;
+}
+.num85 {
+ grid-area: At;
+}
+.num86 {
+ grid-area: Rn;
+}
+.num87 {
+ grid-area: Fr;
+}
+.num88 {
+ grid-area: Ra;
+}
+.num89 {
+ grid-area: AS;
+}
+.num104 {
+ grid-area: Rf;
+}
+.num105 {
+ grid-area: Db;
+}
+.num106 {
+ grid-area: Sg;
+}
+.num107 {
+ grid-area: Bh;
+}
+.num108 {
+ grid-area: Hs;
+}
+.num109 {
+ grid-area: Mt;
+}
+.num110 {
+ grid-area: Ds;
+}
+.num111 {
+ grid-area: Rg;
+}
+.num112 {
+ grid-area: Cn;
+}
+.num113 {
+ grid-area: Nh;
+}
+.num114 {
+ grid-area: Fl;
+}
+.num115 {
+ grid-area: Mc;
+}
+.num116 {
+ grid-area: Lv;
+}
+.num117 {
+ grid-area: Ts;
+}
+.num118 {
+  grid-area: Og; 
+}
+
+
+
+/*
+.H {
+  grid-area: H;
+}
+.Li {
+  grid-area: Li;
+}
+.Na {
+  grid-area: Na;
+}
+.K {
+  grid-area: K;
+}
+.Rb {
+  grid-area: Rb;
+}
+.Cs {
+  grid-area: Cs;
+}
+
+.
+.Be {
+  g
+}
+.Mg {
+  g
+}
+.Ca {
+  g
+}
+.Sr {
+  g
+}
+.Ba {
+  g
+}
+*//*# sourceMappingURL=style.css.map */

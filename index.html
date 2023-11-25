@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Periodic Table</title>
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <h1>Periodic Table in CSS grid</h1>
+  <h2>by Hazem Maddouri</h2>
+  <div class="container">
+    <div class="elem__sample num00">
+      <div class="hide">Atomic Number</div>
+      <div>Symbol</div>
+      <div class="hide">Name</div>
+      <div class="hide">Atomic Mass</div>
+    </div>
+    <div class="elem__nonmetal num01">
+      <div class="hide">1</div>
+      <div>H</div>
+      <div class="hide">Hydrogen</div>
+      <div class="hide">1.008</div>
+    </div>
+
+    <div class="elem__noblegas num02">
+      <div class="hide">2</div>
+      <div>He</div>
+      <div class="hide">Helium</div>
+      <div class="hide">4.0026</div>
+    </div>
+
+    <div class="elem__alkmetal num03">
+      <div class="hide">3</div>
+      <div>Li</div>
+      <div class="hide">Lithium</div>
+      <div class="hide">6.94</div>
+    </div>
+
+    <div class="elem__alkearth num04">
+      <div class="hide">4</div>
+      <div>Be</div>
+      <div class="hide">Beryllium</div>
+      <div class="hide">9.0122</div>
+    </div>
+
+    <div class="elem__semimetal num05">
+      <div class="hide">5</div>
+      <div>B</div>
+      <div class="hide">Boron</div>
+      <div class="hide">10.81</div>
+    </div>
+
+    <div class="elem__nonmetal num06">
+      <div class="hide">6</div>
+      <div>C</div>
+      <div class="hide">Carbon</div>
+      <div class="hide">12.011</div>
+    </div>
+
+    <div class="elem__nonmetal num07">
+      <div class="hide">7</div>
+      <div>N</div>
+      <div class="hide">Nitrogen</div>
+      <div class="hide">14.007</div>
+    </div>
+
+    <div class="elem__nonmetal num08">
+      <div class="hide">8</div>
+      <div>O</div>
+      <div class="hide">Oxygen</div>
+      <div class="hide">15.999</div>
+    </div>
+
+    <div class="elem__halogen num09">
+      <div class="hide">9</div>
+      <div>F</div>
+      <div class="hide">Fluorine</div>
+      <div class="hide">18.998</div>
+    </div>
+
+    <div class="elem__noblegas num10">
+      <div class="hide">10</div>
+      <div>Ne</div>
+      <div class="hide">Neon</div>
+      <div class="hide">20.180</div>
+    </div>
+
+    <div class="elem__alkmetal num11">
+      <div class="hide">11</div>
+      <div>Na</div>
+      <div class="hide">Sodium</div>
+      <div class="hide">22.990</div>
+    </div>
+
+    <div class="elem__alkearth num12">
+      <div class="hide">12</div>
+      <div>Mg</div>
+      <div class="hide">Magnesium</div>
+      <div class="hide">24.305</div>
+    </div>
+
+    <div class="elem__basicmetal num13">
+      <div class="hide">13</div>
+      <div>Al</div>
+      <div class="hide">Aluminum</div>
+      <div class="hide">26.982</div>
+    </div>
+
+    <div class="elem__semimetal num14">
+      <div class="hide">14</div>
+      <div>Si</div>
+      <div class="hide">Silicon</div>
+      <div class="hide">28.085</div>
+    </div>
+
+    <div class="elem__nonmetal num15">
+      <div class="hide">15</div>
+      <div>P</div>
+      <div class="hide">Phosphorus</div>
+      <div class="hide">30.974</div>
+    </div>
+
+    <div class="elem__nonmetal num16">
+      <div class="hide">16</div>
+      <div>S</div>
+      <div class="hide">Sulfur</div>
+      <div class="hide">32.06</div>
+    </div>
+
+    <div class="elem__halogen num17">
+      <div class="hide">17</div>
+      <div>Cl</div>
+      <div class="hide">Chlorine</div>
+      <div class="hide">35.453</div>
+    </div>
+
+    <div class="elem__noblegas num18">
+      <div class="hide">18</div>
+      <div>Ar</div>
+      <div class="hide">Argon</div>
+      <div class="hide">39.948</div>
+    </div>
+
+    <div class="elem__alkmetal num19">
+      <div class="hide">19</div>
+      <div>K</div>
+      <div class="hide">Potassium</div>
+      <div class="hide">39.098</div>
+    </div>
+
+    <div class="elem__alkearth num20">
+      <div class="hide">20</div>
+      <div>Ca</div>
+      <div class="hide">Calcium</div>
+      <div class="hide">40.078</div>
+    </div>
+
+    <div class="elem__transmetal num21">
+      <div class="hide">21</div>
+      <div>Sc</div>
+      <div class="hide">Scandium</div>
+      <div class="hide">44.956</div>
+    </div>
+
+    <div class="elem__transmetal num22">
+      <div class="hide">22</div>
+      <div>Ti</div>
+      <div class="hide">Titanium</div>
+      <div class="hide">47.867</div>
+    </div>
+
+    <div class="elem__transmetal num23">
+      <div class="hide">23</div>
+      <div>V</div>
+      <div class="hide">Vanadium</div>
+      <div class="hide">50.942</div>
+    </div>
+
+    <div class="elem__transmetal num24">
+      <div class="hide">24</div>
+      <div>Cr</div>
+      <div class="hide">Chromium</div>
+      <div class="hide">51.996</div>
+    </div>
+
+    <!-- Manganese -->
+    <div class="elem__transmetal num25">
+      <div class="hide">25</div>
+      <div>Mn</div>
+      <div class="hide">Manganese</div>
+      <div class="hide">54.938</div>
+    </div>
+
+    <!-- Iron -->
+    <div class="elem__transmetal num26">
+      <div class="hide">26</div>
+      <div>Fe</div>
+      <div class="hide">Iron</div>
+      <div class="hide">55.845</div>
+    </div>
+
+    <!-- Cobalt -->
+    <div class="elem__transmetal num27">
+      <div class="hide">27</div>
+      <div>Co</div>
+      <div class="hide">Cobalt</div>
+      <div class="hide">58.933</div>
+    </div>
+
+    <!-- Nickel -->
+    <div class="elem__transmetal num28">
+      <div class="hide">28</div>
+      <div>Ni</div>
+      <div class="hide">Nickel</div>
+      <div class="hide">58.693</div>
+    </div>
+
+    <!-- Copper -->
+    <div class="elem__transmetal num29">
+      <div class="hide">29</div>
+      <div>Cu</div>
+      <div class="hide">Copper</div>
+      <div class="hide">63.546</div>
+    </div>
+
+    <!-- Zinc -->
+    <div class="elem__transmetal num30">
+      <div class="hide">30</div>
+      <div>Zn</div>
+      <div class="hide">Zinc</div>
+      <div class="hide">65.38</div>
+    </div>
+
+    <!-- Gallium -->
+    <div class="elem__basicmetal num31">
+      <div class="hide">31</div>
+      <div>Ga</div>
+      <div class="hide">Gallium</div>
+      <div class="hide">69.723</div>
+    </div>
+
+    <!-- Germanium -->
+    <div class="elem__semimetal num32">
+      <div class="hide">32</div>
+      <div>Ge</div>
+      <div class="hide">Germanium</div>
+      <div class="hide">72.630</div>
+    </div>
+
+    <!-- Arsenic -->
+    <div class="elem__semimetal num33">
+      <div class="hide">33</div>
+      <div>As</div>
+      <div class="hide">Arsenic</div>
+      <div class="hide">74.922</div>
+    </div>
+
+    <!-- Selenium -->
+    <div class="elem__nonmetal num34">
+      <div class="hide">34</div>
+      <div>Se</div>
+      <div class="hide">Selenium</div>
+      <div class="hide">78.971</div>
+    </div>
+
+    <!-- Bromine -->
+    <div class="elem__halogen num35">
+      <div class="hide">35</div>
+      <div>Br</div>
+      <div class="hide">Bromine</div>
+      <div class="hide">79.904</div>
+    </div>
+
+    <!-- Krypton -->
+    <div class="elem__noblegas num36">
+      <div class="hide">36</div>
+      <div>Kr</div>
+      <div class="hide">Krypton</div>
+      <div class="hide">83.798</div>
+    </div>
+
+    <!-- Rubidium -->
+    <div class="elem__alkmetal num37">
+      <div class="hide">37</div>
+      <div>Rb</div>
+      <div class="hide">Rubidium</div>
+      <div class="hide">85.468</div>
+    </div>
+
+    <!-- Strontium -->
+    <div class="elem__alkearth num38">
+      <div class="hide">38</div>
+      <div>Sr</div>
+      <div class="hide">Strontium</div>
+      <div class="hide">87.62</div>
+    </div>
+
+    <!-- Yttrium -->
+    <div class="elem__transmetal num39">
+      <div class="hide">39</div>
+      <div>Y</div>
+      <div class="hide">Yttrium</div>
+      <div class="hide">88.906</div>
+    </div>
+
+    <!-- Zirconium -->
+    <div class="elem__transmetal num40">
+      <div class="hide">40</div>
+      <div>Zr</div>
+      <div class="hide">Zirconium</div>
+      <div class="hide">91.224</div>
+    </div>
+
+    <!-- Niobium -->
+    <div class="elem__transmetal num41">
+      <div class="hide">41</div>
+      <div>Nb</div>
+      <div class="hide">Niobium</div>
+      <div class="hide">92.906</div>
+    </div>
+
+    <!-- Molybdenum -->
+    <div class="elem__transmetal num42">
+      <div class="hide">42</div>
+      <div>Mo</div>
+      <div class="hide">Molybdenum</div>
+      <div class="hide">95.95</div>
+    </div>
+
+    <!-- Technetium -->
+    <div class="elem__transmetal num43">
+      <div class="hide">43</div>
+      <div>Tc</div>
+      <div class="hide">Technetium</div>
+      <div class="hide">(98)</div>
+    </div>
+
+    <!-- Ruthenium -->
+    <div class="elem__transmetal num44">
+      <div class="hide">44</div>
+      <div>Ru</div>
+      <div class="hide">Ruthenium</div>
+      <div class="hide">101.07</div>
+    </div>
+
+    <!-- Rhodium -->
+    <div class="elem__transmetal num45">
+      <div class="hide">45</div>
+      <div>Rh</div>
+      <div class="hide">Rhodium</div>
+      <div class="hide">102.91</div>
+    </div>
+
+    <!-- Palladium -->
+    <div class="elem__transmetal num46">
+      <div class="hide">46</div>
+      <div>Pd</div>
+      <div class="hide">Palladium</div>
+      <div class="hide">106.42</div>
+    </div>
+
+    <!-- Silver -->
+    <div class="elem__transmetal num47">
+      <div class="hide">47</div>
+      <div>Ag</div>
+      <div class="hide">Silver</div>
+      <div class="hide">107.87</div>
+    </div>
+    <div class="elem__transmetal num48">
+      <div class="hide">48</div>
+      <div>Cd</div>
+      <div class="hide">Cadmium</div>
+      <div class="hide">112.414</div>
+    </div>
+    <div class="elem__basicmetal num49">
+      <div class="hide">49</div>
+      <div>In</div>
+      <div class="hide">Indium</div>
+      <div class="hide">114.818</div>
+    </div>
+    <div class="elem__basicmetal num50">
+      <div class="hide">50</div>
+      <div>Sn</div>
+      <div class="hide">Tin</div>
+      <div class="hide">118.710</div>
+    </div>
+    <div class="elem__semimetal num51">
+      <div class="hide">51</div>
+      <div>Sb</div>
+      <div class="hide">Antimony</div>
+      <div class="hide">121.760</div>
+    </div>
+    <div class="elem__semimetal num52">
+      <div class="hide">52</div>
+      <div>Te</div>
+      <div class="hide">Tellurium</div>
+      <div class="hide">127.603</div>
+    </div>
+    <div class="elem__halogen num53">
+      <div class="hide">53</div>
+      <div>I</div>
+      <div class="hide">Iodine</div>
+      <div class="hide">126.9045</div>
+    </div>
+    <div class="elem__noblegas num54">
+      <div class="hide">54</div>
+      <div>Xe</div>
+      <div class="hide">Xenon</div>
+      <div class="hide">131.293</div>
+    </div>
+    <div class="elem__alkmetal num55">
+      <div class="hide">55</div>
+      <div>Cs</div>
+      <div class="hide">Cesium</div>
+      <div class="hide">132.9054</div>
+    </div>
+    <div class="elem__alkearth num56">
+      <div class="hide">56</div>
+      <div>Ba</div>
+      <div class="hide">Barium</div>
+      <div class="hide">137.327</div>
+    </div>
+    <div class="elem__lanthanide num57">57-71</div>
+    <div class="elem__transmetal num72">
+      <div class="hide">72</div>
+      <div>Hf</div>
+      <div class="hide">Hafnium</div>
+      <div class="hide">178</div>
+    </div>
+    <div class="elem__transmetal num73">
+      <div class="hide">73</div>
+      <div>Ta</div>
+      <div class="hide">Tantalum</div>
+      <div class="hide">181</div>
+    </div>
+    <div class="elem__transmetal num74">
+      <div class="hide">74</div>
+      <div>W</div>
+      <div class="hide">Tungsten</div>
+      <div class="hide">184</div>
+    </div>
+    <div class="elem__transmetal num75">
+      <div class="hide">75</div>
+      <div>Re</div>
+      <div class="hide">Rhenium</div>
+      <div class="hide">186</div>
+    </div>
+    <div class="elem__transmetal num76">
+      <div class="hide">76</div>
+      <div>Os</div>
+      <div class="hide">Osmium</div>
+      <div class="hide">190</div>
+    </div>
+    <div class="elem__transmetal num77">
+      <div class="hide">77</div>
+      <div>Ir</div>
+      <div class="hide">Iridium</div>
+      <div class="hide">192</div>
+    </div>
+    <div class="elem__transmetal num78">
+      <div class="hide">78</div>
+      <div>Pt</div>
+      <div class="hide">Platinum</div>
+      <div class="hide">195</div>
+    </div>
+    <div class="elem__transmetal num79">
+      <div class="hide">79</div>
+      <div>Au</div>
+      <div class="hide">Gold</div>
+      <div class="hide">197</div>
+    </div>
+    <div class="elem__transmetal num80">
+      <div class="hide">80</div>
+      <div>Hg</div>
+      <div class="hide">Mercury</div>
+      <div class="hide">201</div>
+    </div>
+    <div class="elem__basicmetal num81">
+      <div class="hide">81</div>
+      <div>Tl</div>
+      <div class="hide">Thallium</div>
+      <div class="hide">204</div>
+    </div>
+    <div class="elem__basicmetal num82">
+      <div class="hide">82</div>
+      <div>Pb</div>
+      <div class="hide">Lead</div>
+      <div class="hide">207</div>
+    </div>
+    <div class="elem__basicmetal num83">
+      <div class="hide">83</div>
+      <div>Bi</div>
+      <div class="hide">Bismuth</div>
+      <div class="hide">208</div>
+    </div>
+    <div class="elem__semimetal num84">
+      <div class="hide">84</div>
+      <div>Po</div>
+      <div class="hide">Polonium</div>
+      <div class="hide">209</div>
+    </div>
+    <div class="elem__halogen num85">
+      <div class="hide">85</div>
+      <div>At</div>
+      <div class="hide">Astatine</div>
+      <div class="hide">210</div>
+    </div>
+    <div class="elem__noblegas num86">
+      <div class="hide">86</div>
+      <div>Rn</div>
+      <div class="hide">Radon</div>
+      <div class="hide">222</div>
+    </div>
+    <div class="elem__alkmetal num87">
+      <div class="hide">87</div>
+      <div>Fr</div>
+      <div class="hide">Francium</div>
+      <div class="hide">223</div>
+    </div>
+    <div class="elem__alkearth num88">
+      <div class="hide">88</div>
+      <div>Ra</div>
+      <div class="hide">Radium</div>
+      <div class="hide">226</div>
+    </div>
+    <div class="elem__actinide num89">89-103</div>
+    <div class="elem__transmetal num104">
+      <div class="hide">104</div>
+      <div>Rf</div>
+      <div class="hide">Rutherfordium</div>
+      <div class="hide">(267)</div>
+    </div>
+    <div class="elem__transmetal num105">
+      <div class="hide">105</div>
+      <div>Db</div>
+      <div class="hide">Dubnium</div>
+      <div class="hide">(270)</div>
+    </div>
+    <div class="elem__transmetal num106">
+      <div class="hide">106</div>
+      <div>Sg</div>
+      <div class="hide">Seaborgium</div>
+      <div class="hide">(271)</div>
+    </div>
+    <div class="elem__transmetal num107">
+      <div class="hide">107</div>
+      <div>Bh</div>
+      <div class="hide">Bohrium</div>
+      <div class="hide">(270)</div>
+    </div>
+    <div class="elem__transmetal num108">
+      <div class="hide">108</div>
+      <div>Hs</div>
+      <div class="hide">Hassium</div>
+      <div class="hide">(277)</div>
+    </div>
+    <div class="elem__transmetal num109">
+      <div class="hide">109</div>
+      <div>Mt</div>
+      <div class="hide">Meitnerium</div>
+      <div class="hide">(276)</div>
+    </div>
+    <div class="elem__transmetal num110">
+      <div class="hide">110</div>
+      <div>Ds</div>
+      <div class="hide">Darmstadtium</div>
+      <div class="hide">(281)</div>
+    </div>
+    <div class="elem__transmetal num111">
+      <div class="hide">111</div>
+      <div>Rg</div>
+      <div class="hide">Roentgenium</div>
+      <div class="hide">(280)</div>
+    </div>
+    <div class="elem__transmetal num112">
+      <div class="hide">112</div>
+      <div>Cn</div>
+      <div class="hide">Copernicium</div>
+      <div class="hide">(285)</div>
+    </div>
+    <div class="elem__basicmetal num113">
+      <div class="hide">113</div>
+      <div>Nh</div>
+      <div class="hide">Nihonium</div>
+      <div class="hide">(284)</div>
+    </div>
+    <div class="elem__basicmetal num114">
+      <div class="hide">114</div>
+      <div>Fl</div>
+      <div class="hide">Flerovium</div>
+      <div class="hide">(289)</div>
+    </div>
+    <div class="elem__basicmetal num115">
+      <div class="hide">115</div>
+      <div>Mc</div>
+      <div class="hide">Moscovium</div>
+      <div class="hide">(288)</div>
+    </div>
+    <div class="elem__basicmetal num116">
+      <div class="hide">116</div>
+      <div>Lv</div>
+      <div class="hide">Livermorium</div>
+      <div class="hide">(293)</div>
+    </div>
+    <div class="elem__halogen num117">
+      <div class="hide">117</div>
+      <div>Ts</div>
+      <div class="hide">Tennessine</div>
+      <div class="hide">(294)</div>
+    </div>
+    <div class="elem__noblegas num118">
+      <div class="hide">118</div>
+      <div>Og</div>
+      <div class="hide">Oganesson</div>
+      <div class="hide">(294)</div>
+    </div>
+    <!-- <div class="lanth01">La</div>
+  <div class="lanth02">Ce</div>
+  <div class="lanth03">Pr</div>
+  <div class="lanth04">Nd</div>
+  <div class="lanth05">Pm</div>
+  <div class="lanth06">Sm</div>
+  <div class="lanth07">Eu</div>
+  <div class="lanth08">Gd</div>
+  <div class="lanth09">Tb</div>
+  <div class="lanth10">Dy</div>
+  <div class="lanth11">Ho</div>
+  <div class="lanth12">Er</div>
+  <div class="lanth13">Tm</div>
+  <div class="lanth14">Yb</div>
+  <div class="lanth15">Lu</div>
+  <div class="actin01"></div>
+  <div class="actin02"></div>
+  <div class="actin03"></div>
+  <div class="actin04"></div>
+  <div class="actin05"></div>
+  <div class="actin06"></div>
+  <div class="actin07"></div>
+  <div class="actin08"></div>
+  <div class="actin09"></div>
+  <div class="actin10"></div>
+  <div class="actin11"></div>
+  <div class="actin12"></div>
+  <div class="actin13"></div>
+  <div class="actin14"></div>
+  <div class="actin15"></div>
+//-->
+  </div>
+  <!-- partial -->
+
+</body>
+
+</html>
